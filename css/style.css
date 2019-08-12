@@ -228,3 +228,62 @@ MENU
 ===
 */
 
+.menu-section{
+  background-image: url('../images/menu-background.jpg');
+}
+.menu-section .container{
+  display: flex;
+  justify-content: space-between;
+}
+.menu-section .devider{
+  text-align: center;
+}
+.menu-section-left, .menu-section-right{
+  width: 45%;
+}
+.menu-group:first-child{
+  margin-bottom: 2.5rem;
+}
+.menu-section .subtitle{
+  color: #dab33e;
+  text-align: center;
+}
+.menu-item{
+  margin-top: 1.4rem;
+  padding: 0 0.4rem;
+}
+.menu-item.special{
+  border: 1px solid #dab33e;
+  position: relative;
+}
+.menu-item.menu-item.special:before{
+  position: absolute;
+  top: 0;
+  right: -1px;
+  content: 'Special';
+  background: url('../images/special.png');
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  transform: translateY(-104%);
+  font-family: 'Lato', sans-serif;
+}
+.menu-item .head{
+  display: flex;
+  justify-content: space-between;
+  color: #dab33e;
+  font-size: 1.1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #dab33e;
+}
+.menu-item .desc{
+  padding: 0.4rem 0;
+}
+
+/*
+=== 
+REVIEWS
+===
+*/
+
+
