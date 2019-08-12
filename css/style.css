@@ -59,7 +59,8 @@ html{
 }
 .subtitle{
   font-size: 2rem;
-  font-family: 'Yaseva One', cursive;
+  font-family: 'Yeseva One', cursive;
+  font-weight: 200;
 }
 .desc{
   font-size: 1rem;
@@ -122,7 +123,7 @@ nav
   align-items: center;
 }
 .logo a{
-  color: #fff;
+  color: rgba(255,255,255,0.9);
   font-family: 'Yeseva One', cursive;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -131,7 +132,7 @@ nav
   color: #fff;
   font-size: 1.2rem;
   font-family: 'Gentium Book Basic', serif;
-  padding: 1.3rem 1rem;
+  padding: 1.2rem 1rem;
 }
 .menu a.active{
   border-top: 2px solid #fff;
@@ -156,4 +157,35 @@ hero
 }
 .action a:first-child{
   margin-right: 1.5rem;
+}
+
+/*
+===
+ABOUT
+===
+*/
+
+.about{
+  background-image: url('../images/about-background.jpg');
+}
+.about .container{
+  display: flex;
+}
+.about-text{
+  flex: 1;
+  padding-right: 1rem;
+}
+.about .subtitle{
+  color: #dab33e;
+}
+.about .desc{
+  width: 90%;
+margin: auto;
+}
+.about-image{
+  flex: 1;
+  background-image: url('../images/dish.png');
+}
+.cook{
+   margin-top: 2rem;
 }
