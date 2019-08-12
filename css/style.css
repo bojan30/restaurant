@@ -74,8 +74,8 @@ html{
   background-size: cover;
   background-repeat: no-repeat;
 }
-.p-y-3{
-  padding: 3rem 0;
+.p-y-4{
+  padding: 4rem 0;
 }
 .btn{
   display: inline-block;
@@ -286,4 +286,36 @@ REVIEWS
 ===
 */
 
-
+.reviews{
+  background-image: url('../images/reviews-background.jpg');
+}
+.reviews .quote{
+  background-image: url('../images/reviews-text-background.png');
+  width: 60%;
+  margin: auto;
+  padding: 4rem;
+  text-align: center;
+}
+.reviews .quote-text{
+  color: #dde0df;
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  position: relative;
+}
+.reviews .quote-text:before{
+  content: '“';
+  font-size: 6rem;
+  position: absolute;
+  top: -3rem;
+  left: -2.5rem;
+  font-family: 'Georgia';
+}
+.reviews .subtitle{
+  color: #fff;
+}
+.author{
+  color: #fff;
+  margin-top: 1rem;
+  font-family: 'Lato', sans-serif;
+}
