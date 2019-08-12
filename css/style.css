@@ -1,0 +1,159 @@
+/*
+=== 
+FONTS 
+===
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/*
+=== 
+RESET 
+===
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input, button{
+  border: none;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+}
+
+/*
+=== 
+GLOBAL
+===
+*/
+
+body{
+  line-height: 1.2;
+}
+html{
+  font-size: 16px;
+}
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.text-center{
+  text-align: center;
+}
+.title{
+  font-size: 4rem;
+  font-family: 'Yeseva One', cursive;
+  color: #fff;
+  font-weight: 400;
+}
+.subtitle{
+  font-size: 2rem;
+  font-family: 'Yaseva One', cursive;
+}
+.desc{
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+.devider{
+  margin: 1rem 0;
+}
+.bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.p-y-3{
+  padding: 3rem 0;
+}
+.btn{
+  display: inline-block;
+  padding: 0.8rem 2.4rem;
+  background-color: rgba(255,255,255,0.25);
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+}
+.btn:hover{
+  border: 1px solid #111;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/*
+=== 
+HEADER
+===
+*/
+
+.header{
+  height: 100vh;
+  background-image: url('../images/header-background.jpg');
+}
+
+/*
+=== 
+nav
+===
+*/
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+.navbar, .social-icons, .menu{
+  display: flex;
+  align-items: center;
+}
+.logo a{
+  color: #fff;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.menu a{
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Gentium Book Basic', serif;
+  padding: 1.3rem 1rem;
+}
+.menu a.active{
+  border-top: 2px solid #fff;
+}
+.social-icons a{
+  color: #dab33e;
+  padding: 0.5rem;
+}
+
+/*
+===
+hero
+===
+*/
+
+.hero{
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.action a:first-child{
+  margin-right: 1.5rem;
+}
