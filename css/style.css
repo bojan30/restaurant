@@ -69,6 +69,9 @@ html{
 .devider{
   margin: 1rem 0;
 }
+.devider img{
+  max-width: 100%;
+}
 .bg{
   background-position: center;
   background-size: cover;
@@ -185,7 +188,6 @@ margin: auto;
 }
 .about-image{
   flex: 1;
-  background-image: url('../images/dish.png');
 }
 .cook{
    margin-top: 2rem;
@@ -333,7 +335,7 @@ RESERVATIONS
   display: flex;
 }
 .reservations .reservations-images{
-  flex: 1;
+  width: 50%;
   display: flex;
 }
 .reservations .reservations-images img{
@@ -346,7 +348,7 @@ RESERVATIONS
   color: #dab33e;
 }
 .reservations .reservations-content{
-  flex: 1;
+  width: 50%;
   padding-left: 4rem;
 }
 .reservations .reservations-content p:first-of-type{
@@ -481,4 +483,103 @@ FOOTER
 }
 .cards i {
   padding: 0.5rem;
+}
+
+/*
+===
+MEDIA QUERY
+===
+*/
+
+@media(max-width: 1200px){
+  .container{
+    width: 90%;
+  }
+}
+@media(max-width: 992px){
+  .about .container{
+    flex-direction: column;
+  }
+  .about-text{
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
+  .about-image{
+    width: 60%;
+    margin: auto;
+  }
+  .about-image img{
+    width: 100%;
+  }
+  .ingredients-content{
+    margin-left: 0;
+    width: 60%;
+    margin: auto;
+  }
+  .reservations .reservations-images{
+    width: 60%;
+  }
+  .reservations .reservations-content{
+    padding-left: 2rem;
+    width: 40%;
+  }
+}
+
+@media(max-width: 768px){
+  .container{
+    width: 92%;
+  }
+  .title{
+    font-size: 3rem;
+  }
+  .ingredients-content{
+    width: 100%;
+  }
+  .reviews .quote{
+    width: 100%;
+  }
+  .menu-section-left, .menu-section-right{
+    width: 48%;
+  }
+  .reservations .container{
+    display: block;
+  }
+  .reservations .reservations-images{
+    width: 100%;
+  }
+  .reservations .reservations-content{
+    padding-left: 0;
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media(max-width: 576px){
+  .menu-section .container{
+    display: block;
+  }
+  .title{
+    font-size: 2.5rem;
+  }
+  .btn{
+    padding: 0.6rem 1.4rem;
+  }
+  .action a:first-child{
+  margin-right: 0.4rem;
+}
+  .menu-section-left, .menu-section-right{
+    width: 100%;
+  }
+  .menu-section-left{
+    margin-bottom: 2.5rem;
+  }
+  .footer .container{
+    display: block;
+  }
+  .footer-col{
+    margin-bottom: 2.5rem;
+  }
+  .footer-col:last-child{
+    margin-bottom: 0;
+  }
 }
