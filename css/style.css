@@ -90,6 +90,7 @@ html{
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
+  cursor: pointer;
 }
 .btn:hover{
   border: 1px solid #111;
@@ -319,3 +320,118 @@ REVIEWS
   margin-top: 1rem;
   font-family: 'Lato', sans-serif;
 }
+
+/*
+===
+RESERVATIONS
+===
+*/
+.reservations{
+  background-image: url('../images/about-background.jpg');
+}
+.reservations .container{
+  display: flex;
+}
+.reservations .reservations-images{
+  flex: 1;
+  display: flex;
+}
+.reservations .reservations-images img{
+  width: 48%;
+}
+.reservations .reservations-images img:first-child{
+  margin-right: 4%;
+}
+.reservations .subtitle{
+  color: #dab33e;
+}
+.reservations .reservations-content{
+  flex: 1;
+  padding-left: 4rem;
+}
+.reservations .reservations-content p:first-of-type{
+  margin-bottom: 0.6rem;
+}
+
+/*
+===
+form
+===
+*/
+.reservations-form{
+  margin-top: 2rem;
+}
+.reservations-form .form-group{
+  display: flex;
+}
+.reservations-form .input-group{
+  flex: 1;
+  margin-bottom: 1.2rem;
+}
+.reservations-form .input-group label{
+  color: #dab33e;
+  font-family: 'Open Sans';
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.reservations-form .input-group input{
+  display: block;
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.4rem;
+  border: 1px solid #c8c6c6;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  font-size: 0.8rem;
+}
+.reservations-form .input-group input::placeholder{
+  font-family: 'Open Sans';
+  font-style: italic;
+}
+.reservations-form .input-group input:focus{
+  border: 1px solid #dab33e;
+}
+.reservations-form .input-group:first-child{
+  margin-right: 2rem;
+}
+.book-now{
+  background-color: #c9a131;
+  padding: 0.4rem 2.4rem;
+  text-transform: initial;
+  border: none;
+}
+.book-now:hover{
+  border: none;
+  background-color: #b6912c;
+}
+/*date input*/
+input[type="date"]::-webkit-calendar-picker-indicator{
+  color: rgba(0,0,0,0);
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+input[type="date"]{
+  position: relative;
+}
+input[type="date"]:before {
+  color: transparent;
+  background: none;
+  display: block;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f073';
+  /* This is the calendar icon in FontAwesome */
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 8px;
+  right: 6px;
+  color: #7c7c7c;
+}
+
+::-webkit-inner-spin-button { display: none; }
+::-webkit-datetime-edit-fields-wrapper { padding: 0 }
