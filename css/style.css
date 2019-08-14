@@ -573,6 +573,9 @@ MEDIA QUERY
   .menu-section-left{
     margin-bottom: 2.5rem;
   }
+  .ingredients-content{
+    padding: 1.5rem;
+  }
   .footer .container{
     display: block;
   }
@@ -581,5 +584,11 @@ MEDIA QUERY
   }
   .footer-col:last-child{
     margin-bottom: 0;
+  }
+  .reviews .quote{
+    padding: 2.5rem;
+  }
+  .reviews .quote-text:before{
+    left: -1.5rem;
   }
 }
