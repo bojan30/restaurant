@@ -120,7 +120,28 @@ nav
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 10%;
   height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+.nav.scrolled{
+  background-color: #fff;
+}
+.nav.scrolled .menu a{
+  color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.8);
+}
+.nav.scrolled .logo a{
+  color: rgba(0, 0, 0, 0.8);
 }
 .navbar, .social-icons, .menu{
   display: flex;
@@ -158,6 +179,7 @@ hero
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 4rem;
 }
 .action a:first-child{
   margin-right: 1.5rem;
@@ -495,6 +517,9 @@ MEDIA QUERY
   .container{
     width: 90%;
   }
+  .nav{
+    padding: 0 5%;
+  }
 }
 @media(max-width: 992px){
   .about .container{
@@ -528,6 +553,9 @@ MEDIA QUERY
 @media(max-width: 768px){
   .container{
     width: 92%;
+  }
+  .nav{
+    padding: 0 4%;
   }
   .title{
     font-size: 3rem;
