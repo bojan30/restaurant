@@ -219,7 +219,7 @@ nav
   -o-transform: translateX(0%);
 }
 .close{
-  font-size: 2rem;
+  font-size: 1.8rem;
   position: absolute;
   right: 10%;
   cursor: pointer;
@@ -677,6 +677,12 @@ MEDIA QUERY
     width: 100%;
     margin-top: 2rem;
   }
+  .side-menu{
+    width: 70%;
+  }
+  .close{
+    right: 5%;
+  }
 }
 
 @media(max-width: 576px){
@@ -715,5 +721,8 @@ MEDIA QUERY
   }
   .reviews .quote-text:before{
     left: -1.5rem;
+  }
+  .side-menu{
+    width: 85%;
   }
 }
