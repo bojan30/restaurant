@@ -25,6 +25,7 @@ function removeActiveClass(links) {
 }
 
 let links = document.querySelectorAll('.menu-link');
+const sideNavLinks = document.querySelectorAll('.side-menu-nav .menu-link');
 
 window.addEventListener('scroll', () => {
   links.forEach(link => {
@@ -103,7 +104,7 @@ closeBtn.addEventListener('click', ()=>{
 })
 
 //every time user clicks on side nav link, close side nav
-const sideNavLinks = document.querySelectorAll('.side-menu-nav .menu-link');
+
 sideNavLinks.forEach(link=>{
   link.addEventListener('click', () => {
     overlay.classList.remove('active');
