@@ -24,7 +24,8 @@ function removeActiveClass(links) {
   })
 }
 
-let links = document.querySelectorAll('.menu a');
+let links = document.querySelectorAll('.menu-link');
+
 window.addEventListener('scroll', () => {
   links.forEach(link => {
     //target section
@@ -78,3 +79,34 @@ function scroll(target, duration) {
   };
   requestAnimationFrame(animate);
 }
+
+//open side menu
+
+const burger = document.querySelector('.burger');
+const overlay = document.querySelector('.side-menu-overlay');
+const sideMenu = document.querySelector('.side-menu');
+const closeBtn = document.querySelector('.close');
+burger.addEventListener('click',()=>{
+  overlay.classList.add('active');
+  sideMenu.classList.add('active');
+})
+
+//close side menu
+
+overlay.addEventListener('click', ()=>{
+  overlay.classList.remove('active');
+  sideMenu.classList.remove('active');
+})
+closeBtn.addEventListener('click', ()=>{
+  overlay.classList.remove('active');
+  sideMenu.classList.remove('active');
+})
+
+//every time user clicks on side nav link, close side nav
+const sideNavLinks = document.querySelectorAll('.side-menu-nav .menu-link');
+sideNavLinks.forEach(link=>{
+  link.addEventListener('click', () => {
+    overlay.classList.remove('active');
+    sideMenu.classList.remove('active');
+  });
+})

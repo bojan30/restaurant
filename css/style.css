@@ -126,7 +126,7 @@ nav
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
   transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -165,6 +165,91 @@ nav
 .social-icons a{
   color: #dab33e;
   padding: 0.5rem;
+}
+/*burger menu*/
+.burger{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 2rem;
+  display: none;
+}
+.nav.scrolled .burger{
+  color: rgba(0, 0, 0, 0.8);
+}
+/*side menu*/
+.side-menu-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  display: none;
+  z-index: 3;
+}
+.side-menu-overlay.active{
+  display: block;
+}
+.side-menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #191919;
+  padding: 1.2rem;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  /*ontop*/z-index: 10;
+}
+.side-menu.active{ 
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+.close{
+  font-size: 2rem;
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+  color: #fff;
+}
+.side-menu-nav{
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.side-menu-nav .subtitle{
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.side-menu-nav a{
+  color: #fff;
+  font-family: 'Gentium Book Basic', serif;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+}
+.side-menu-nav a.active{
+  color: #dab33e;
+}
+.side-menu-nav .social-icons{
+  margin-top: 2rem;
+}
+.side-menu-nav .social-icons a{
+  color: #dab33e;
 }
 
 /*
@@ -522,6 +607,18 @@ MEDIA QUERY
   }
 }
 @media(max-width: 992px){
+  .menu{
+    display: none;
+  }
+  .social-icons a{
+    color: #fff;
+  }
+  .nav.scrolled .social-icons a{
+    color: #c9a131;
+  }
+  .burger{
+    display: block;
+  }
   .about .container{
     flex-direction: column;
   }
